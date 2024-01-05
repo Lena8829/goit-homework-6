@@ -176,6 +176,7 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 120px;
   /* margin-right: 76px; */
 }
 .header-logo-dark {
@@ -561,6 +562,7 @@ main {
 .portf-title {
   display: block;
   margin-bottom: 72px;
+  text-align: center;
 }
 .portf-list {
   display: flex;
