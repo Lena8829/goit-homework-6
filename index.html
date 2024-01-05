@@ -32,7 +32,9 @@
   <header class="header">
     <div class="header-container container">
       <nav class="menu-nav">
+
         <a href="./index.html" class="logo header-logo">Web<span class="header-logo-dark">Studio</span></a>
+
         <ul class="nav-list">
           <li class="nav-item"><a href="#studio" class="nav-link active">Studio</a></li>
           <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -50,7 +52,15 @@
         </ul>
       </address>
 
+      <button class="menu-btn" type="button" aria-label="Open menu button">
+        <svg class="menu-btn-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu-burger-btn"></use>
+        </svg>
+      </button>
+
     </div>
+
+
   </header>
 
   <main>
@@ -63,7 +73,7 @@
     </section>
 
     <!-- Feature Section -->
-    <section class="features">
+    <section class="section features">
       <div class="features-container container">
         <h2 class="title visually-hidden">Features</h2>
         <ul class="features-list">
@@ -538,7 +548,7 @@
 
 
   <!-- Modal window -->
-  <div class="backdrop hide">
+  <div class="backdrop">
 
     <div class="modal">
 
@@ -625,8 +635,8 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div class="menu hide">
-    <button class="menu-btn" type="button" aria-label="Close menu button">
+  <div class="menu">
+    <button class=" menu-btn" type="button" aria-label="Close menu button">
       <svg class="menu-btn-icon" width="8" height="8">
         <use href="./images/icons.svg#icon-close-black"></use>
       </svg>

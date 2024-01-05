@@ -101,7 +101,6 @@ main {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -136,9 +135,9 @@ main {
 
 @media only screen and (min-width: 1158px) {
   .text {
-     width: 264px;
+    width: 264px;
+  }
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -165,7 +164,7 @@ main {
 .header {
   border-bottom: 1px solid #e7e9fc;
   display: block;
-  align-items: baseline;
+
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -177,14 +176,35 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 .header-logo-dark {
   color: #2e2f42;
 }
+
+/* Mobile */
+.menu-btn {
+  border: none;
+  background: transparent;
+  fill: #2f2f37;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 .menu-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 16px;
 }
 .nav-list {
   display: flex;
@@ -192,6 +212,13 @@ main {
   align-items: center;
   gap: 40px;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 .nav-link {
   position: relative;
 
@@ -235,19 +262,41 @@ main {
   text-decoration: none;
   color: #434455;
 
-  margin-top: 24px;
-  margin-bottom: 24px;
+  /* margin-top: 24px;
+  margin-bottom: 24px; */
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media only screen and (min-width: 1158px) {
+  .contact-link {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
 .contact-link:hover,
 .contact-link:focus {
   color: #404bbf;
 }
 .contact-list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 12px;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .contact-list {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .contact-list {
+    flex-direction: row;
+  }
+}
+
 .contact-item {
   display: inline-flex;
   justify-content: space-between;
