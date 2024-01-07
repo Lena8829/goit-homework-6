@@ -639,7 +639,7 @@ main {
 
 @media screen and (min-width: 1158px) {
   .portf-list-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 96px) / 4);
   }
 }
 
@@ -930,7 +930,7 @@ main {
 }
 .form-subscribe-icon {
   fill: #ffffff;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 /*=====================================*\
