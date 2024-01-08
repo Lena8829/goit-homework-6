@@ -87,9 +87,9 @@ main {
 .title {
   color: #2e2f42;
   font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
@@ -98,9 +98,11 @@ main {
 
 @media only screen and (min-width: 1158px) {
   .title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -206,8 +208,6 @@ main {
 .menu-nav {
   display: flex;
   align-items: center;
-
-  padding: 16px;
 }
 
 .nav-list {
@@ -274,8 +274,6 @@ main {
 
 @media only screen and (min-width: 1158px) {
   .contact-link {
-    margin-top: 24px;
-    margin-bottom: 24px;
   }
 }
 
@@ -295,9 +293,20 @@ main {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .contact-list {
+    color: #434455;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
   .contact-list {
     flex-direction: row;
+    gap: 40px;
   }
 }
 
@@ -310,10 +319,10 @@ main {
 
 .hero {
   background-color: #2e2f42;
-  height: 600px;
+
   flex-shrink: 0;
 
-  padding: 72px 16px;
+  padding: 72px 0;
   /* padding: 188px 0; */
 
   background-image: linear-gradient(
@@ -343,6 +352,8 @@ main {
 
 @media only screen and (min-width: 768px) {
   .hero {
+    padding: 112px 0;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -363,6 +374,8 @@ main {
 
 @media only screen and (min-width: 1158px) {
   .hero {
+    padding: 188px 0;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -386,20 +399,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  margin-top: 72px;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero-container {
-    margin-top: 112px;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .hero-container {
-    margin-top: 188px;
-  }
 }
 
 .hero-title {
@@ -418,7 +417,7 @@ main {
 
 @media only screen and (max-width: 767.98px) {
   .hero-title {
-    max-width: 288px;
+    max-width: 224px;
   }
 }
 
@@ -468,12 +467,12 @@ main {
 
 /*Feature Section  */
 .features {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .features-list {
   /* Mobile */
   display: flex;
-  gap: 72px;
+  gap: 72px 24px;
   justify-content: center;
   align-items: center;
 
@@ -481,11 +480,6 @@ main {
 }
 
 .features-list-item {
-  width: 100%;
-  display: flex;
-  padding: 72px 24px;
-  flex-direction: column;
-  gap: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -498,7 +492,7 @@ main {
 @media only screen and (min-width: 1158px) {
   .features-list-item {
     width: 264px;
-    width: calc((100% - 216px) / 4);
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -542,12 +536,37 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 1158px) {
+  .text {
+    font-weight: 400;
+  }
+}
+
+.feature-subtitle {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
   margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
   .feature-subtitle {
     display: block;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .feature-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -556,6 +575,23 @@ main {
   background-color: #f4f4fd;
 
   align-items: center;
+}
+@media only screen and (max-width: 767.98px) {
+  .team-container {
+    width: 296px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .team-container {
+    width: 584px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-container {
+    width: 1126px;
+  }
 }
 
 .team-list {
@@ -588,7 +624,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .team-list-item {
-    width: calc((100% - 24px) / 3);
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -669,7 +705,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  gap: 48px;
+  gap: 72px 24px;
 
   /* gap: 24px;
   row-gap: 48px; */
@@ -685,13 +721,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .portf-list-item {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .portf-list-item {
-    width: calc((100% - 96px) / 4);
+    width: calc((100% - 48px) / 3);
   }
 }
 
@@ -765,7 +801,7 @@ main {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .footer-container {
-    padding: 0 108px;
+    width: 584px;
   }
 }
 
@@ -1299,10 +1335,7 @@ main {
 }
 .menu-btn-icon {
 }
-.menu-nav {
-  display: block;
-  margin-bottom: auto;
-}
+
 .menu-nav-item:not(:last-child) {
   margin-bottom: 40px;
 }
